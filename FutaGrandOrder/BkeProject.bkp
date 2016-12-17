@@ -1,0 +1,22 @@
+{
+    "import": {
+        "macro.bkscr": 0
+    },
+    "name": "FutaGrandOrder",
+    "script": {
+        "macro.bkscr": 0,
+        "main.bkscr": 0
+    },
+    "source": {
+        "resource": {
+            "images": {
+                "A_happy.png": 0,
+                "B_wordless.png": 0,
+                "bg_demo.jpg": 0,
+                "msg_dialog.png": 0,
+                "msg_other.png": 0
+            }
+        }
+    },
+    "version": "1.2"
+}
