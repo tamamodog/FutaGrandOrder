@@ -1,9 +1,10 @@
 ﻿*main
 
 //以后用宏来实现场景基础搭建
+//场景demo
 [sprite index=1 file="resource/images/bg_demo"]
-[addto index=1 target=basic_layer zorder=0 pos=[0,0] opacity=255 ]
-
+[addto index=1 target=basic_layer zorder=0 pos=[0,0] opacity=255]
+[bgm file="resource/sound/bgm1.mp3" loop=true vol=100]
 [textwindow file="resource/images/msg_dialog.png" pos=[126,450] rect=[60,85,1008,231]]
 [textstyle color=0xffffff shadow=true shadowcolor=0x333333]
 [sprite index=11 file="resource/images/A_happy"]

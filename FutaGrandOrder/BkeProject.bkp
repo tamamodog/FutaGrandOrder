@@ -15,6 +15,10 @@
                 "bg_demo.jpg": 0,
                 "msg_dialog.png": 0,
                 "msg_other.png": 0
+            },
+            "sound": {
+                "bgm1.mp3": 0,
+                "button.wav": 0
             }
         }
     },
