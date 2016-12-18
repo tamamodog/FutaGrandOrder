@@ -4,17 +4,38 @@
     },
     "name": "FutaGrandOrder",
     "script": {
+        "extend.bkscr": 0,
+        "init.bkscr": 0,
         "macro.bkscr": 0,
-        "main.bkscr": 0
+        "main.bkscr": 0,
+        "script": {
+            "story.bkscr": 0,
+            "system_history.bkscr": 0,
+            "title.bkscr": 0
+        }
     },
     "source": {
         "resource": {
             "images": {
-                "A_happy.png": 0,
-                "B_wordless.png": 0,
-                "bg_demo.jpg": 0,
-                "msg_dialog.png": 0,
-                "msg_other.png": 0
+                "bg": {
+                    "bg_demo.jpg": 0
+                },
+                "chara": {
+                    "A_happy.png": 0,
+                    "B_wordless.png": 0
+                },
+                "msg": {
+                    "msg_dialog.png": 0,
+                    "msg_other.png": 0
+                },
+                "title": {
+                    "button": {
+                        "button_n_01.png": 0,
+                        "button_n_02.png": 0,
+                        "button_on_01.png": 0,
+                        "button_on_02.png": 0
+                    }
+                }
             },
             "sound": {
                 "bgm1.mp3": 0,

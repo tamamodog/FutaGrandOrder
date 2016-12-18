@@ -1,1 +1,22 @@
-%[]
+%[
+  "endB"=>0,
+  "bgm"=>[
+    1,
+    0,
+    0,
+    0
+  ],
+  "last_save"=>-1,
+  "last_save_page"=>0,
+  "nametextId"=>9201,
+  "nameboxId"=>9200,
+  "sliderValue"=>[
+    1200,
+    50,
+    100,
+    100,
+    100
+  ],
+  "display"=>"big",
+  "init"=>1
+]

@@ -1,29 +1,16 @@
 ﻿*main
-
-//以后用宏来实现场景基础搭建
-//场景demo
-[sprite index=1 file="resource/images/bg_demo"]
-[addto index=1 target=basic_layer zorder=0 pos=[0,0] opacity=255]
-[bgm file="resource/sound/bgm1.mp3" loop=true vol=100]
-[textwindow file="resource/images/msg_dialog.png" pos=[126,450] rect=[60,85,1008,231]]
-[textstyle color=0xffffff shadow=true shadowcolor=0x333333]
-[sprite index=11 file="resource/images/A_happy"]
-[addto index=11 target=basic_layer zorder=10 pos=[400,120] opacity=255]
-[sprite index=12 file="resource/images/B_wordless"]
-[addto index=12 target=basic_layer zorder=10 pos=[640,120] opacity=255]
-
-[textsprite index=21 text="郭嫂" size=24 color=0xffffff xinterval=3]
-[anchor index=21 set="center"]
-[addto index=21 target=message_layer pos=[188,28]]
-先试试大小样式[p]
-颜色什么的最后改就行[p]
-保存读取什么的可以加一些按钮在对话框左上角[p]
-[textsprite index=21 text="龙神" size=24 color=0xffffff xinterval=3]
-[anchor index=21 set="center"]
-[addto index=21 target=message_layer pos=[188,28]]
-到时可以用代码来获取长宽直接居中[p]
-
-[remove index=21 delete=true]
-等会再找一些基础音效加进去就可以开工了！[p]
-
-@quit
+/*
+要提前分配好各界面使用的编号，防止出现冲突，已造成不必要的调试麻烦
+1000+	历史记录界面
+2000+	存读档界面
+3000+	选项界面
+4000+	音乐鉴赏界面
+5000+	标题界面
+6000+	摸摸乐界面
+7000+	特典界面
+8000+	结局回顾界面
+9000+	文本框
+10000+	CG界面
+*/
+@call '*init' 'init'
+@jump '*enter' 'title'

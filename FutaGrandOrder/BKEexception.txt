@@ -1,0 +1,37 @@
+EXE Version : v1.3.0 Build 2808 Dev
+Crash Address : 00480A7C
+Reference Address : 00547960  (wWinMain)
+Crash Code : C0000005
+Crash Parameters:
+00000000
+00000000
+
+Error Explanation : 拒绝访问。
+
+Call Stack:
+0048816E => 00480A60
+00458C1F => 00488100
+004E783D => 00458BA0
+Dynamic Call from 004ED90F => 004E6E80 (Most Possible)
+004FC3D4 => 004ED8A0
+00532E22 => 004FB010
+Dynamic Call from 00422971 => 00532DF0 (Most Possible)
+Dynamic Call from 00547E4D => 004228A0 (Most Possible)
+00638CCF => 00547960
+00A0E090 => 00A0E0A2
+
+Registers:
+EAX:0BC27138
+EBX:0BC26C30
+ECX:0019E238
+EDX:00000008
+EDI:0BC26C30
+ESI:00000000
+EBP:00000000
+ESP:0019FF84
+EIP:00A0E095
+
+Stacks:
+
+Script Callstacks (May not be reliable):
+文件(script/title.bkbin)的标签(*enter)的第36行(总第37)行:

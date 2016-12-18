@@ -1,0 +1,42 @@
+﻿*enter
+@textoff
+#f.inGame=false;
+@pretrans //固定画面的状态
+@layer index=5000 width=1280 height=720 //创建一个层作为标题画面底层
+@sprite index=5001 file='bg/bg_demo'//创建一个载入了标题背景画面的精灵
+@addto index=5001 target=5000 zorder=1 opacity=255//将精灵添加到底层上
+
+//按钮的创建与添加从这里开始
+//因为按钮图片的明明只有编号不同，采用了for loop 来偷懒
+##
+//开始，退出
+var button_pos=[[800,380],[670,480]];//预先设定的按钮坐标
+var button_event=[ ["*start",'title','jump'],['*quit',,'jump']  ]
+##
+@for var=i range=range(1,3)//生成for循环。其中range(1,3)=[1,2]
+	//在这个循环中会依次的将01到02号按钮生成并添加到底层上
+	@button index=5001+i idle='title/button/button_n_0'+i click='title/button/button_on_0'+i hover='title/button/button_on_0'+i threshold=10 onclick=button_event[i-1]//创建按钮精灵
+	@addto target=5000 index=5001+i pos=button_pos[i-1] zorder=2//将按钮精灵添加到底层上
+@next
+
+@addto index=5000 target=basic_layer//将整个底层添加到基础层上使得底层和基础层能够显示
+@trans mode='normal'//解除画面的固定状态
+//记录bgm
+#sf.bgm[0]=true;
+@bgm file='bgm1'
+@savepoint
+@save index=999
+@waitbutton
+
+
+*start
+#f.inGame = true; //标记为在游戏中
+@action target=5000 mode='fadeto' opacity=0 time=300
+@stop channel=bgm fadeout=300
+@waitallaction
+//开始前清空历史记录
+#History.clear();
+@jump '*main' 'story'
+
+*quit
+@quit
