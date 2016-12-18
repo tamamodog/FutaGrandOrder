@@ -1,0 +1,32 @@
+﻿*main
+
+@action target=5000 mode="fadeto" opacity=0 time=500
+@waitallaction
+@remove index=5000
+
+@layer index=100 height=1280 width=1280
+@sprite index=101 file="bg/bg_demo"
+@addto index=101 target=100 zorder=0 pos=[0,0] opacity=255
+@textwindow file="msg/msg_dialog.png" pos=[126,450] rect=[60,85,1008,231]
+@textstyle color=0xffffff shadow=true shadowcolor=0x333333
+@sprite index=102 file="chara/A_happy"
+@addto index=102 target=100 zorder=10 pos=[400,120] opacity=255
+@sprite index=103 file="chara/B_wordless"
+@addto index=103 target=100 zorder=10 pos=[640,120] opacity=255
+@addto index=100 target=basic_layer opacity=255
+
+@textsprite index=21 text="郭嫂" size=24 color=0xffffff xinterval=3
+@anchor index=21 set="center"
+@addto index=21 target=message_layer pos=[188,28]
+先试试大小样式[p]
+颜色什么的最后改就行[p]
+保存读取什么的可以加一些按钮在对话框左上角[p]
+@textsprite index=21 text="龙神" size=24 color=0xffffff xinterval=3
+@anchor index=21 set="center"
+@addto index=21 target=message_layer pos=[188,28]
+到时可以用代码来获取长宽直接居中[p]
+
+@remove index=21 delete=true
+等会再找一些基础音效加进去就可以开工了！[p]
+
+@quit

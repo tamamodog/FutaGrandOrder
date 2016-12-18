@@ -3,6 +3,10 @@
 
 GameName = "FutaGrandOrder";
 ResolutionSize = [1280, 720];
+GameTitle = "FutaGrandOrder";
+ImageAutoSearchPath = ["resource/images"];
+AudioAutoSearchPath = ["resource/sound"];
+ScriptAutoSearchPath = ["script"];
 MaxSaveDataNum = 10000;
 DefaultFontSize = 24;
 DefaultFontColor = "0x000000";

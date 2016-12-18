@@ -1,4 +1,15 @@
 %[
+  "script/story.bkbin"=>%[
+    "*main"=>383
+  ],
+  "script/title.bkbin"=>%[
+    "*start"=>47,
+    "*enter"=>178,
+    "*quit"=>7
+  ],
+  "init.bkbin"=>%[
+    "*init"=>15
+  ],
   "main.bkbin"=>%[
     "*main"=>348
   ]
