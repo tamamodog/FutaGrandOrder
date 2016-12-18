@@ -18,15 +18,13 @@
 @textsprite index=21 text="郭嫂" size=24 color=0xffffff xinterval=3
 @anchor index=21 set="center"
 @addto index=21 target=message_layer pos=[188,28]
-先试试大小样式[p]
-颜色什么的最后改就行[p]
-保存读取什么的可以加一些按钮在对话框左上角[p]
+sbllc[p]
 @textsprite index=21 text="龙神" size=24 color=0xffffff xinterval=3
 @anchor index=21 set="center"
 @addto index=21 target=message_layer pos=[188,28]
-到时可以用代码来获取长宽直接居中[p]
+llcsb[p]
 
 @remove index=21 delete=true
-等会再找一些基础音效加进去就可以开工了！[p]
+开始游戏！！！！！[p]
 
 @quit

@@ -17,8 +17,8 @@
       "rect"=>[
         0,
         0,
-        308,
-        62
+        300,
+        100
       ],
       "pos"=>[
         800,
@@ -58,10 +58,48 @@
       "type"=>5
     ],
     "5001"=>%[
+      "loop"=>0,
+      "source"=>[
+        "resource/images/title/enter/title1.png",
+        "resource/images/title/enter/title2.png",
+        "resource/images/title/enter/title3.png",
+        "resource/images/title/enter/title4.png",
+        "resource/images/title/enter/title5.png",
+        "resource/images/title/enter/title6.png",
+        "resource/images/title/enter/title7.png",
+        "resource/images/title/enter/title8.png",
+        "resource/images/title/enter/title9.png",
+        "resource/images/title/enter/title10.png",
+        "resource/images/title/enter/title11.png",
+        "resource/images/title/enter/title12.png",
+        "resource/images/title/enter/title13.png",
+        "resource/images/title/enter/title14.png",
+        "resource/images/title/enter/title15.png",
+        "resource/images/title/enter/title16.png",
+        "resource/images/title/enter/title17.png",
+        "resource/images/title/enter/title18.png",
+        "resource/images/title/enter/title19.png",
+        "resource/images/title/enter/title20.png",
+        "resource/images/title/enter/title21.png",
+        "resource/images/title/enter/title22.png",
+        "resource/images/title/enter/title23.png",
+        "resource/images/title/enter/title24.png",
+        "resource/images/title/enter/title25.png",
+        "resource/images/title/enter/title26.png",
+        "resource/images/title/enter/title27.png",
+        "resource/images/title/enter/title28.png",
+        "resource/images/title/enter/title29.png",
+        "resource/images/title/enter/title30.png"
+      ],
+      "interval"=>[
+        33
+      ],
+      "delay"=>0,
       "threshold"=>0,
       "disabled"=>0,
       "cleanup"=>0,
       "focus"=>0,
+      "isstart"=>1,
       "modal"=>0,
       "childs"=>[],
       "anchory"=>1,
@@ -70,7 +108,7 @@
         0,
         0,
         1280,
-        731
+        720
       ],
       "pos"=>[
         0,
@@ -87,6 +125,7 @@
       ],
       "zorder"=>1,
       "visible"=>1,
+      "count"=>30,
       "effect"=>[],
       "rawcolor"=>4294967295,
       "flip"=>[
@@ -94,9 +133,9 @@
         0
       ],
       "opacity"=>255,
-      "filename"=>"resource/images/bg/bg_demo.jpg",
+      "filename"=>"",
       "affectparent"=>0,
-      "type"=>0
+      "type"=>6
     ],
     "5000"=>%[
       "color"=>16777215,
@@ -108,7 +147,8 @@
       "childs"=>[
         5001,
         5002,
-        5003
+        5003,
+        5004
       ],
       "anchory"=>1,
       "anchorx"=>0,
@@ -158,12 +198,66 @@
       "rect"=>[
         0,
         0,
-        308,
-        63
+        300,
+        100
       ],
       "pos"=>[
-        670,
+        800,
         480
+      ],
+      "scale"=>[
+        1,
+        1
+      ],
+      "rotation"=>[
+        0,
+        0,
+        void
+      ],
+      "zorder"=>2,
+      "visible"=>1,
+      "effect"=>[],
+      "rawcolor"=>4294967295,
+      "flip"=>[
+        0,
+        0
+      ],
+      "opacity"=>255,
+      "onclick"=>%[
+        "id"=>-2147483648,
+        "stable"=>1,
+        "condition"=>"",
+        "enabled"=>1,
+        "exp"=>"",
+        "type"=>1,
+        "file"=>"script/title.bkbin",
+        "label"=>""
+      ],
+      "filename"=>"",
+      "affectparent"=>0,
+      "hover"=>"resource/images/title/button/button_on_02.png",
+      "type"=>5
+    ],
+    "5004"=>%[
+      "threshold"=>10,
+      "disabled"=>0,
+      "idle"=>"resource/images/title/button/button_n_03.png",
+      "cleanup"=>0,
+      "focus"=>0,
+      "click"=>"resource/images/title/button/button_on_03.png",
+      "modal"=>0,
+      "childs"=>[],
+      "anchory"=>1,
+      "anchorx"=>0,
+      "rect"=>[
+        0,
+        0,
+        300,
+        100
+      ],
+      "pos"=>[
+        800,
+        580
       ],
       "scale"=>[
         1,
@@ -195,7 +289,7 @@
       ],
       "filename"=>"",
       "affectparent"=>0,
-      "hover"=>"resource/images/title/button/button_on_02.png",
+      "hover"=>"resource/images/title/button/button_on_03.png",
       "type"=>5
     ],
     "-3"=>%[
@@ -429,12 +523,12 @@
           "exp"=>"",
           "index"=>0,
           "bgmf"=>0,
-          "duration"=>0,
+          "duration"=>1000,
           "canskip"=>0,
           "pressed"=>0,
           "waitflag"=>0
         ],
-        "offset"=>163,
+        "offset"=>190,
         "label"=>"*enter",
         "ismacro"=>0,
         "file"=>"script/title.bkbin"

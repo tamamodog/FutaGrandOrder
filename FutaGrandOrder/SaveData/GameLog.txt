@@ -26,14 +26,16 @@ script/title.bkscr : *enter
 #f.inGame=false;
 @pretrans
 @layer index=5000 width=1280 height=720
-@sprite index=5001 file="bg/bg_demo"
+@animate mode="multifiles" index=5001 file=["title/enter/title1","title/enter/title2","title/enter/title3","title/enter/title4","title/enter/title5","title/enter/title6","title/enter/title7","title/enter/title8","title/enter/title9","title/enter/title10","title/enter/title11","title/enter/title12","title/enter/title13","title/enter/title14","title/enter/title15","title/enter/title16","title/enter/title17","title/enter/title18","title/enter/title19","title/enter/title20","title/enter/title21","title/enter/title22","title/enter/title23","title/enter/title24","title/enter/title25","title/enter/title26","title/enter/title27","title/enter/title28","title/enter/title29","title/enter/title30"] interval=33 loop=0
 @addto index=5001 target=5000 zorder=1 opacity=255
+@animate mode="start" index=5001
+@wait time=1000 canskip=false
 ##
 //开始，退出
-var button_pos=[[800,380],[670,480]];//预先设定的按钮坐标
-var button_event=[ ["*start",'title','jump'],['*quit',,'jump']  ]
+var button_pos=[[800,380],[800,480],[800,580]];//预先设定的按钮坐标
+var button_event=[ ["*start",'title','jump'],[,,],['*quit',,'jump']  ]
 ##
-@for var=i range=range(1,3)
+@for var=i range=range(1,4)
 　@button index=5001+i idle="title/button/button_n_0"+i hover="title/button/button_on_0"+i click="title/button/button_on_0"+i onclick=button_event[(i-1)] threshold=10
 　@addto index=5001+i target=5000 zorder=2 pos=button_pos[(i-1)]
 　@next
@@ -44,44 +46,3 @@ var button_event=[ ["*start",'title','jump'],['*quit',,'jump']  ]
 @savepoint
 @save index=999
 @waitbutton
-script/title.bkscr : *start
-#f.inGame = true; //标记为在游戏中
-@action mode="fadeto" opacity=0 time=300 target=5000
-@stop channel=bgm fadeout=300
-@waitallaction
-#History.clear();
-@jump file="story.bkscr" (story.bkscr) label="*main" (*main)
-script/story.bkscr : *main
-@action mode="fadeto" opacity=0 time=500 target=5000
-@waitallaction
-@remove index=5000
-@layer index=100 width=1280 height=1280
-@sprite index=101 file="bg/bg_demo"
-@addto index=101 target=100
-@textwindow file="msg/msg_dialog.png" pos=[126, 450] rect=[60, 85, 1008, 231]
-@textstyle color=16777215 shadow=true shadowcolor=3355443
-@sprite index=102 file="chara/A_happy"
-@addto index=102 target=100 zorder=10 pos=[400, 120] opacity=255
-@sprite index=103 file="chara/B_wordless"
-@addto index=103 target=100 zorder=10 pos=[640, 120] opacity=255
-@addto index=100 target=basic_layer opacity=255
-@textsprite index=21 text="郭嫂" color=16777215 size=24 xinterval=3
-@anchor index=21 set="center"
-@addto index=21 target=message_layer pos=[188, 28]
-先试试大小样式
-@p
-颜色什么的最后改就行
-@p
-保存读取什么的可以加一些按钮在对话框左上角
-@p
-@textsprite index=21 text="龙神" color=16777215 size=24 xinterval=3
-@anchor index=21 set="center"
-@addto index=21 target=message_layer pos=[188, 28]
-到时可以用代码来获取长宽直接居中
-@p
-@remove index=21 delete=true
-等会再找一些基础音效加进去就可以开工了！
-@p
-@quit
-【错误】脚本文件执行到末端。
-　　　　该错误处于原文件（script/story.bkscr）的第31行。
